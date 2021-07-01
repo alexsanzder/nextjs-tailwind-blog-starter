@@ -13,9 +13,13 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
   return (
     <>
       <Meta customMeta={customMeta} />
-      <div className="max-w-prose px-4 mx-auto">
-        <Header />
-        <main className="pt-4 pb-12">{children}</main>
+      <div className="block min-h-screen">
+        <div className="PageTransitionWipeContent"></div>
+        <div className="PageTransitionContent">
+          <Header />
+          <div className="Menu"></div>
+          <main className="Main">{children}</main>
+        </div>
       </div>
     </>
   );
