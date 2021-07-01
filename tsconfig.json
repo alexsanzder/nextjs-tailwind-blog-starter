@@ -3,11 +3,11 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["components/*"],
-      "@/api/*": ["api/*"],
-      "@/data/*": ["data/*"],
+      "@/styles/*": ["styles/*"],
       "@/layouts/*": ["layouts/*"],
-      "@/lib/*": ["lib/*"],
-      "@/styles/*": ["styles/*"]
+      "@/types/*": ["types/*"],
+      "@/utils/*": ["utils/*"],
+      "@/graphql/*": ["graphql/*"],
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],

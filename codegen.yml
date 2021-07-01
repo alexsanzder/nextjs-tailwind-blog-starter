@@ -1,0 +1,23 @@
+overwrite: true
+schema: "http://localhost:1337/graphql"
+documents: "pages/**/*.graphql"
+generates:
+  graphql/generated/types.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - named-operations-object
+  graphql/generated/schema.json:
+    plugins:
+      - introspection
+  graphql/generated/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+  graphql/generated/pages.tsx:
+    config:
+      reactApolloVersion: 3
+      withHooks: true
+    plugins:
+      - "graphql-codegen-apollo-next-ssr"

@@ -1,0 +1,8 @@
+query Posts {
+  posts {
+    slug
+    title
+    description
+    content
+  }
+}

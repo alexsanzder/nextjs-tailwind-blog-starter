@@ -1,0 +1,11 @@
+query PostsBySlug($slug: String) {
+  posts(where: { slug: $slug }) {
+    title
+    description
+    content
+    published_at
+    image {
+      url
+    }
+  }
+}
