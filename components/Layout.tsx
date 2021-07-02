@@ -1,6 +1,6 @@
-// components/Layout.tsx
-import Header from '@/components/Header';
 import Meta from '@/components/Meta';
+import Header from '@/components/Header';
+import Menu from '@/components/Menu';
 import { MetaProps } from '@/types/meta';
 
 type LayoutProps = {
@@ -17,7 +17,7 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
         <div className="PageTransitionWipeContent"></div>
         <div className="PageTransitionContent">
           <Header />
-          <div className="Menu"></div>
+          <Menu />
           <main className="Main">{children}</main>
         </div>
       </div>

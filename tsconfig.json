@@ -7,6 +7,7 @@
       "@/layouts/*": ["layouts/*"],
       "@/types/*": ["types/*"],
       "@/utils/*": ["utils/*"],
+      "@/context/*": ["context/*"],
       "@/graphql/*": ["graphql/*"],
     },
     "target": "es5",
